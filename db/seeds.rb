@@ -17,7 +17,8 @@ class Seed
       destinations = []
       destinations.push(Destination.create!(
         country: Faker::Address.country,
-        city: Faker::Games::Zelda.location
+        city: Faker::Games::Zelda.location,
+        specific_location: Faker::Movies::LordOfTheRings.location
         ))
         destinations
         rand(3..15).times do
