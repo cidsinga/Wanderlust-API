@@ -1,7 +1,8 @@
 class ReviewsController < ApplicationController
 
   def index
-    @reviews = Review.all
+    @destination = Destination.find(params[:destination_id])
+    @reviews = @destination.reviews
     json_response(@reviews)
   end
 
