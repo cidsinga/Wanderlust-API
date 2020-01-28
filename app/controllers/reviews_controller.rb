@@ -1,7 +1,7 @@
 class ReviewsController < ApplicationController
 
   def index
-    @reviews = {"review": "place was good.  Real good."}
+    @reviews = Review.all
     json_response(@reviews)
   end
 
