@@ -5,7 +5,7 @@ class DestinationsController < ApplicationController
     country = params[:country]
     city = params[:city]
     specific_location = params[:specific_location]
-    binding.pry
+    # binding.pry
     @destinations = Destination.all
     json_response(@destinations)
   end
