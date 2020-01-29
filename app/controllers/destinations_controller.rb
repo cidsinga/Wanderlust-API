@@ -1,7 +1,7 @@
 class DestinationsController < ApplicationController
 
   def index
-    # http://localhost:3000/destinations?country=Marshall-Islands
+    # http://localhost:3000/destinations?country=japan
     country = params[:country]
     city = params[:city]
     specific_location = params[:specific_location]
