@@ -1,6 +1,11 @@
 class DestinationsController < ApplicationController
 
   def index
+    # http://localhost:3000/destinations?country=Marshall-Islands
+    country = params[:country]
+    city = params[:city]
+    specific_location = params[:specific_location]
+    binding.pry
     @destinations = Destination.all
     json_response(@destinations)
   end
